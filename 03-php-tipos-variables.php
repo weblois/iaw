@@ -109,7 +109,7 @@
 	
 	var_dump($festivos);
 
-	echo "<p>El 1 de dic tiene valor {$festivos[12][1]}</p>";//valor 0, no festivo
+	echo "<p>El 1 de nov tiene valor {$festivos[11][1]}</p>";//valor 0, no festivo
 	echo "<p>El 6 de dic tiene valor {$festivos[12][6]}</p>";//valor 1, festivo
 	echo "<p>El 8 de dic tiene valor {$festivos[12][8]}</p>";//valor 1, festivo
 
