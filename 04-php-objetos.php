@@ -6,8 +6,6 @@
 	<title>Objetos en PHP</title>
 </head>
 <body>
-	<?php
-
 <?php
 // Definición de la clase Coche
 class Coche {
@@ -54,8 +52,5 @@ $seatPanda->arrancar();
 ?>
 
 
-
-
-	?>
 </body>
 </html>
