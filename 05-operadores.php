@@ -33,6 +33,71 @@
 	$saludo.=", ¿ cómo estás ?";
 	echo "<p>El valor de \$saludo es '$saludo'</p>";
 
+	echo "<h2>Operadores de comparación ==, !=, <, >, <= y >=</h2>";
+
+	$a=5;
+	$b=4;
+
+	echo "<p>";
+	if ($a==$b ) {
+		echo "$a es igual a $b";
+	} else {
+		echo "$a es distinto a $b";
+	}
+	echo "</p>";
+
+	//operador ternario ?
+	echo "<p>";
+	echo $a==$b?"$a es igual a $b":"$a es distinto a $b";
+	echo "</p>";
+
+	echo "<h2>Operadores de incremento y decremento, ++, --</h2>";
+
+	$c=0;
+	echo "<p>\$c = $c</p>";
+	echo "\$c++"; //valor 1
+	$c++; //equivale a $c=$c+1, también a $c+=1;
+	echo "<p>\$c = $c</p>";
+	echo "$c--";//equivale a $c=$c-1, también a $c-=1;
+	$c--; //valor 0
+	echo "<p>\$c = $c</p>";
+	echo "\$d=5+\$c++;";
+	$d= 5 + $c++;//$c valor 1, $d valor 5
+	echo "<p>\$c = $c, \$d = $d, </p>";
+
+	$c=0;
+	$d= 5 + ++$c;//$c valor 1, $d valor 6
+	echo "<p>\$c = $c, \$d = $d, </p>";
+
+	echo "<h2>Operadores Lógicos and, or, xor, !</h2>";
+	$a=5;
+	$b=4;
+
+	echo "<p>";
+	if (!($a==$b) ) {
+		echo "$a no es igual a $b";
+	} else {
+		echo "$a es igual a $b";
+	}
+	echo "</p>";
+
+
+	echo "<p>";
+	if ($a!=$b and $a>5  ) {
+		echo "se cumple: $a!=$b and $a>5";
+	} else {
+		echo "no se cumple: $a!=$b and $a>5 ";
+	}
+	echo "</p>";
+
+	echo "<p>";
+	if ($a!=$b or $a>5  ) {
+		echo "se cumple: $a!=$b or $a>5";
+	} else {
+		echo "no se cumple: $a!=$b or $a>5 ";
+	}
+	echo "</p>";
+
 
 
 
